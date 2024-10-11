@@ -11,23 +11,22 @@ int suma(int*, int);
 int main() {
     int arr[5] = {1, 2, 3, 4, 5};
 
-    int resultado = suma(arr, 5);
-
     // TODO: (11) Crea una variable llamada resultado  y asigna lo que devuelve la función suma
     // pasa a la función el arreglo y su tamaño
-    
-    printf("El resultado es\n", resultado);
+    int resultado = suma(arr, 5);
+
     // TODO: (12) Imprime el resultado
+    printf("El resultado es: %d\n", resultado);
     
     return 0;
 }
 
 
 //TODO: (13) Crea la función suma que realiza la suma de todos los elementos de un arreglo
-int suma(int *a, int t){
-    int i;
-    for(i =0; i < 5;i++){
-        arr[i] + 5;
-        
+int suma(int* arr, int size) {
+    int suma = 0;
+    for (int i = 0; i < size; i++) {
+        suma += arr[i];
     }
+    return suma;
 }

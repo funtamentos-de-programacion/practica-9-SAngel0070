@@ -10,6 +10,7 @@ int main() {
         for (int j = 0; j < 2; j++) {
             for (int k = 0; k < 2; k++) {
                 // TODO: Realiza las operaciones solo usando apuntadores
+                *(*(C + i) + j) += *(*(A + i) + k) * *(*(B + k) + j);
             }
         }
     }
