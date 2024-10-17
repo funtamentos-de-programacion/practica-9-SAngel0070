@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int a = 10, b = 20, c = 30;
     //TODO: (14) Declara un arreglo de tres apuntadores a entero
-    int* arr[3];
+    int* arr[3] = a;
     
     //TODO: (15) Asigna a cada apuntador la dirección de las variables a, b y c
     arr[0] = &a;

@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    //TODO: (17) Asigna lo valores del 1 al 9 para rellenar la matriz de 3x3
-    int arr[3][3];
+    int arr[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
 
     int valor = 1;
 
@@ -10,17 +9,15 @@ int main() {
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             //TODO: (18) Usa i y j para acceder alos elementos de la matriz
-            arr[i][j] = valor;
-            valor++;
+            printf("%d\t", arr[i][j]);
         }
+        printf("'n");
     }
-    // Imprimimos para verificar la matriz(esta bien que agregue esto? Es que sino no se puede comprobar la matriz)
-    printf("Matriz 3x3:\n");
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            printf("%d ", arr[i][j]);
+
+    for(int i = 0; i <3; i++){
+        for (int j = 0; j < 3; j++){
+            printf("%p\n", &arr[1][1]);
         }
-        printf("\n");
     }
     return 0;
 }
